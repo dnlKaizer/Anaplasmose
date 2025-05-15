@@ -51,7 +51,8 @@ body {
     pointer-events: none;
 }
 
-p {
+p,
+li {
     text-align: justify;
 }
 
