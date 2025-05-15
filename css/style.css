@@ -1,0 +1,31 @@
+body {
+    background-color: #f6fff6;
+}
+
+.navbar,
+.footer {
+    background-color: #218838 !important;
+}
+
+.navbar-brand,
+.nav-link,
+.footer-text {
+    color: #fff !important;
+}
+
+.card {
+    border-color: #218838;
+}
+
+.card-title {
+    color: #218838;
+}
+
+.list-group-item.active {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
