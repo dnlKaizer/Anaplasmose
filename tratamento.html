@@ -8,21 +8,50 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Anaplasmose Bovina</a>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 py-2">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-link p-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                    <img src="img/menu.png" alt="Menu" width="24" height="24">
+                </button>
+                <span class="text-white fw-bold d-none d-sm-inline">Menu</span>
+            </div>
+            <div class="navbar-brand-centered">
+                <a class="navbar-brand mx-auto fw-bold fs-3" href="index.html" style="pointer-events:auto;">Anaplasmose Bovina</a>
+            </div>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-start sidebar-green" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel" style="color:#218838;">Navegação</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="nav flex-column">
+                <a class="nav-link" href="introducao.html">1. Introdução</a>
+                <a class="nav-link" href="sinais-clinicos.html">2. Sinais Clínicos e Diagnóstico</a>
+                <a class="nav-link" href="exame-fisico.html">3. Exame Físico e Contenção</a>
+                <a class="nav-link active" href="tratamento.html">4. Tratamento</a>
+                <a class="nav-link" href="impacto.html">5. Impacto no Organismo</a>
+                <a class="nav-link" href="prevencao.html">6. Prevenção e Controle</a>
+                <a class="nav-link" href="papel-veterinario.html">7. Papel do Médico Veterinário</a>
+                <a class="nav-link" href="diagnostico-diferencial.html">8. Diagnóstico Diferencial</a>
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div class="mb-4">
             <h2 class="mb-3" style="color:#218838;">4. Tratamento</h2>
-            <h4>4.1 Protocolos terapêuticos (antibióticos, suporte)</h4>
+            <h4>4.1 Protocolos terapêuticos</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.</p>
-            <h4>4.2 Uso de fármacos (quando necessário)</h4>
+            <h4>4.2 Uso de fármacos</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.</p>
-            <h4>4.3 Necessidade de cirurgia (rara) e analgesia</h4>
+            <h4>4.3 Necessidade de cirurgia e analgesia</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.</p>
-            <a href="index.html" class="btn btn-success mt-3">Voltar ao Índice</a>
+            <div class="d-flex justify-content-between mt-4">
+                <a href="exame-fisico.html" class="btn btn-outline-success">&larr; Anterior</a>
+                <a href="impacto.html" class="btn btn-outline-success">Próxima &rarr;</a>
+            </div>
         </div>
     </div>
     <footer class="footer mt-auto py-3">

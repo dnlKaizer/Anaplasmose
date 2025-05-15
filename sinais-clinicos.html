@@ -8,11 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Anaplasmose Bovina</a>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 py-2">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-link p-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                    <img src="img/menu.png" alt="Menu" width="24" height="24">
+                </button>
+                <span class="text-white fw-bold d-none d-sm-inline">Menu</span>
+            </div>
+            <div class="navbar-brand-centered">
+                <a class="navbar-brand mx-auto fw-bold fs-3" href="index.html" style="pointer-events:auto;">Anaplasmose Bovina</a>
+            </div>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-start sidebar-green" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel" style="color:#218838;">Navegação</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="nav flex-column">
+                <a class="nav-link" href="introducao.html">1. Introdução</a>
+                <a class="nav-link active" href="sinais-clinicos.html">2. Sinais Clínicos e Diagnóstico</a>
+                <a class="nav-link" href="exame-fisico.html">3. Exame Físico e Contenção</a>
+                <a class="nav-link" href="tratamento.html">4. Tratamento</a>
+                <a class="nav-link" href="impacto.html">5. Impacto no Organismo</a>
+                <a class="nav-link" href="prevencao.html">6. Prevenção e Controle</a>
+                <a class="nav-link" href="papel-veterinario.html">7. Papel do Médico Veterinário</a>
+                <a class="nav-link" href="diagnostico-diferencial.html">8. Diagnóstico Diferencial</a>
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div class="mb-4">
             <h2 class="mb-3" style="color:#218838;">2. Sinais Clínicos e Diagnóstico</h2>
@@ -20,11 +46,14 @@
             <p>
                 Os sinais observados consistem de anemia hemolítica, icterícia, dispnéia, taquicardia, febre, fadiga, lacrimejamento, sialorréia, diarréia, micção freqüente, anorexia, perda de peso, aborto, às vezes agressividade.
             </p>
-            <h4>2.2 Alterações laboratoriais (hemograma, bioquímica, etc.)</h4>
+            <h4>2.2 Alterações laboratoriais</h4>
             <p>
                 Devido aos sinais clínicos pouco específicos para anaplasmose e a grande quantidade de enfermidades, no diagnóstico diferencial pode ser necessário a utilização de testes laboratoriais para a confirmação da doença. A literatura mostra uma grande variedade de testes laboratoriais que podem ser utilizados para a pesquisa direta do A. marginale e seus componentes, ou antígenos e anticorpos, que podem estar presentes nos humores de animais acometidos pela infecção. O diagnóstico anátomo-patológico é efetuado através de necropsia, para observação das alterações presentes no animal. As alterações macroscópicas mais observadas são sangue fino e aquoso, mucosas e serosas anêmicas ou ictéricas, hepatoesplenomegalia, rins aumentados e escuros, vesícula biliar distendida com bile densa, grumosa e congestão cerebral. Na fase aguda da doença, quando a parasitemia é alta, Anaplasma spp é facilmente detectado nos eritrócitos de bovinos, através de esfregaços sanguíneos delgados corados pelo Método Giemsa. Esfregaços de fragmento de sangue coagulado também podem ser utilizados para a confecção de lâminas. Entretanto, quando os animais se recuperam, tornando-se portadores, com baixa parasitemia, a visualização do parasito, por esse método, torna-se extremamente difícil e falha. Nesse sentido, técnicas como, sondas de DNA, PCR e outros métodos para detecção direta de antígenos, com altas sensibilidade e especificidade, têm sido desenvolvidos para detecção do Anaplasma Spp e ou de seus componentes. Por outro lado, os testes sorológicos, como o C-ELISA, podem detectar anticorpos contra a bactéria, indicando exposição prévia à doença ou a animais portadores. O C-ELISA é frequentemente usado para demonstrar a ausência de circulação do vírus na população e para determinar o status imunológico em animais ou grupos após a vacinação.
             </p>
-            <a href="index.html" class="btn btn-success mt-3">Voltar ao Índice</a>
+            <div class="d-flex justify-content-between mt-4">
+                <a href="introducao.html" class="btn btn-outline-success">&larr; Anterior</a>
+                <a href="exame-fisico.html" class="btn btn-outline-success">Próxima &rarr;</a>
+            </div>
         </div>
     </div>
     <footer class="footer mt-auto py-3">

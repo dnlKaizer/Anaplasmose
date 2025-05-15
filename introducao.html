@@ -8,11 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Anaplasmose Bovina</a>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 py-2">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-link p-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                    <img src="img/menu.png" alt="Menu" width="24" height="24">
+                </button>
+                <span class="text-white fw-bold d-none d-sm-inline">Menu</span>
+            </div>
+            <div class="navbar-brand-centered">
+                <a class="navbar-brand mx-auto fw-bold fs-3" href="index.html" style="pointer-events:auto;">Anaplasmose Bovina</a>
+            </div>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-start sidebar-green" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel" style="color:#218838;">Navegação</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="introducao.html">1. Introdução</a>
+                <a class="nav-link" href="sinais-clinicos.html">2. Sinais Clínicos e Diagnóstico</a>
+                <a class="nav-link" href="exame-fisico.html">3. Exame Físico e Contenção</a>
+                <a class="nav-link" href="tratamento.html">4. Tratamento</a>
+                <a class="nav-link" href="impacto.html">5. Impacto no Organismo</a>
+                <a class="nav-link" href="prevencao.html">6. Prevenção e Controle</a>
+                <a class="nav-link" href="papel-veterinario.html">7. Papel do Médico Veterinário</a>
+                <a class="nav-link" href="diagnostico-diferencial.html">8. Diagnóstico Diferencial</a>
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div class="mb-4">
             <h2 class="mb-3" style="color:#218838;">1. Introdução</h2>
@@ -21,7 +47,7 @@
                 A anaplasmose bovina é uma doença infecciosa causada por bactérias intracelulares da ordem Rickettsiales, a mais importante das quais é a Anaplasma marginale, que, juntamente com outros microrganismos patogênicos, faz parte do grupo de Tristeza bovina.
                 A anaplasmose é uma importante doença que causa grandes prejuízos devido à morte dos animais infectados, abortos, perdas na produtividade e gastos com medidas preventivas para o controle dos vetores.
             </p>
-            <h4>1.2 Agente etiológico (microrganismo, família, características)</h4>
+            <h4>1.2 Agente etiológico</h4>
             <p>
                 A anaplasmose bovina é causada por uma bactéria intracelular, Anaplasma marginale, que pertence à família Anaplasmataceae e à ordem Rickettsiales. Este microrganismo é um parasita obrigatório das células vermelhas do sangue (eritrócitos) de bovinos, causando uma doença hemolítica não contagiosa.
             </p>
@@ -29,7 +55,9 @@
             <p>
                 A anaplasmose é caracterizada por anemia hemolítica, icterícia, perda de peso, redução na produção de leite e, em casos graves, morte. Ela determina o aparecimento de formas clínicas aguda, superaguda, leve e/ou crônica, com um período pré-patente de 20 a 40 dias seguido por parasitemia e intensa anemia, provocando perdas com um custo estimado de 40 milhões de dólares anuais; está amplamente distribuída nas regiões tropicais, subtropicais e temperadas do mundo.
             </p>
-            <a href="index.html" class="btn btn-success mt-3">Voltar ao Índice</a>
+            <div class="d-flex justify-content-end mt-4">
+                <a href="sinais-clinicos.html" class="btn btn-outline-success">Próxima &rarr;</a>
+            </div>
         </div>
     </div>
     <footer class="footer mt-auto py-3">

@@ -29,3 +29,31 @@ body {
 .list-group-item {
     cursor: pointer;
 }
+
+.sidebar-green .nav-link {
+    color: #218838 !important;
+}
+
+.sidebar-green .nav-link.active {
+    font-weight: bold;
+    background: #e6f9ea;
+}
+
+/* ----------------- */
+
+.navbar-brand-centered {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand-centered {
+        position: static;
+        width: auto;
+    }
+}

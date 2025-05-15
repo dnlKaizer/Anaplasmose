@@ -8,11 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Anaplasmose Bovina</a>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4 py-2">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-link p-0 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
+                    <img src="img/menu.png" alt="Menu" width="24" height="24">
+                </button>
+                <span class="text-white fw-bold d-none d-sm-inline">Menu</span>
+            </div>
+            <div class="navbar-brand-centered">
+                <a class="navbar-brand mx-auto fw-bold fs-3" href="index.html" style="pointer-events:auto;">Anaplasmose Bovina</a>
+            </div>
         </div>
     </nav>
+    <div class="offcanvas offcanvas-start sidebar-green" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebarMenuLabel" style="color:#218838;">Navegação</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="nav flex-column">
+                <a class="nav-link" href="introducao.html">1. Introdução</a>
+                <a class="nav-link" href="sinais-clinicos.html">2. Sinais Clínicos e Diagnóstico</a>
+                <a class="nav-link" href="exame-fisico.html">3. Exame Físico e Contenção</a>
+                <a class="nav-link" href="tratamento.html">4. Tratamento</a>
+                <a class="nav-link active" href="impacto.html">5. Impacto no Organismo</a>
+                <a class="nav-link" href="prevencao.html">6. Prevenção e Controle</a>
+                <a class="nav-link" href="papel-veterinario.html">7. Papel do Médico Veterinário</a>
+                <a class="nav-link" href="diagnostico-diferencial.html">8. Diagnóstico Diferencial</a>
+            </nav>
+        </div>
+    </div>
     <div class="container">
         <div class="mb-4">
             <h2 class="mb-3" style="color:#218838;">5. Impacto no Organismo</h2>
@@ -23,12 +49,15 @@
                 Bezerros infectados nos primeiros dias de vida, em ambientes onde o carrapato vetor está presente durante todo o ano, tendem a apresentar maior resistência à anaplasmose. Isso se deve à absorção de anticorpos presentes no colostro materno, à imunidade celular precoce e à presença de fatores séricos que conferem resistência (MADRUGA et al., 1987a).<br><br>
                 As linfocinas, especialmente os interferons, também desempenham papel importante na resposta imune. Elas apresentam atividade semelhante ao fator de inibição da migração (MIF) e estão envolvidas na ativação de macrófagos e linfócitos T, particularmente os de função helper (PALMER, 1989).<br><br>
                 Outro aspecto importante da imunidade envolve a opsonização de A. marginale. Anticorpos produzidos por animais imunizados com a proteína majoritária de superfície (MSP1) aumentam a eficiência da fagocitose, em comparação com animais imunizados com antígenos não relacionados, como a ovoalbumina. Esse processo pode ser essencial para a proteção dos animais infectados. Contudo, a eficácia da fagocitose pode ser reduzida em animais esplenectomizados ou com função linfocitária comprometida, o que reforça a importância de estimular adequadamente tanto a produção de anticorpos opsonizantes quanto a função dos macrófagos (CANTOR et al., 1993).<br><br>
-                As proteínas majoritárias de superfície (MSPs) de A. marginale têm papel central na indução da resposta imune. São reconhecidas por anticorpos policlonais e foram identificadas como MSP1a (105 kDa), MSP1b (100 kDa), MSP2 (36 kDa), MSP3 (86 kDa), MSP4 (31 kDa) e MSP5 (19 kDa) (PALMER & McGUIRE, 1984). Essas proteínas estão presentes em cepas de diferentes partes do mundo (VIDOTTO et al., 1994; PATARROYO et al., 1994; ANDRADE, 1998).<br><br>
+                As proteínas majoritárias de superfície (MSPs) de A. marginale têm papel central na indução da resposta imune. São reconhecidas por anticorpos policlonais e foram identificadas como MSP1a (105 kDa), MSP1b (100 kDa), MSP2 (36 kDa), MSP3 (86 kDa), MSP4 (31 kDa), MSP5 (19 kDa) (PALMER & McGUIRE, 1984). Essas proteínas estão presentes em cepas de diferentes partes do mundo (VIDOTTO et al., 1994; PATARROYO et al., 1994; ANDRADE, 1998).<br><br>
                 A imunização de bovinos com formas nativas ou recombinantes dessas MSPs resultou em proteção significativa contra a forma aguda da anaplasmose (PALMER et al., 1986, 1988; PALMER, 1989). Em especial, as proteínas recombinantes MSP3 e MSP5 mostraram-se promissoras tanto na imunização quanto no diagnóstico da doença (McGUIRE et al., 1991; NDUNG'U et al., 1995).
             </p>
-            <h4>5.2 Fisiopatologia (como a doença afeta o organismo)</h4>
+            <h4>5.2 Fisiopatologia</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi urna a dolor.</p>
-            <a href="index.html" class="btn btn-success mt-3">Voltar ao Índice</a>
+            <div class="d-flex justify-content-between mt-4">
+                <a href="tratamento.html" class="btn btn-outline-success">&larr; Anterior</a>
+                <a href="prevencao.html" class="btn btn-outline-success">Próxima &rarr;</a>
+            </div>
         </div>
     </div>
     <footer class="footer mt-auto py-3">
