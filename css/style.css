@@ -56,6 +56,32 @@ li {
     text-align: justify;
 }
 
+.figure-img-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figure-img-caption .figure-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    /* ajuste se quiser limitar o tamanho máximo */
+}
+
+.figure-img-caption .figure-caption {
+    width: 100%;
+    max-width: 600px;
+    /* igual ao max-width da imagem */
+    text-align: center;
+    word-break: break-word;
+}
+
+.referencias-list a {
+    word-break: break-all;
+}
+
 @media (max-width: 991.98px) {
     .navbar-brand-centered {
         position: static;
