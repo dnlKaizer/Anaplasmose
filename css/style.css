@@ -1,8 +1,21 @@
-body {
-    background-color: #f6fff6;
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; /* ou oblique, ou normal oblique */
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* intervalo permitido */
+    font-stretch: 75% 125%; /* opcional: largura variável */
+    font-style: normal; /* ou oblique, ou normal oblique */
 }
 
 body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #f6fff6;
     background-image: url('../img/textura.png'); /* ajuste o caminho */
     background-repeat: repeat;
     background-size: auto;
@@ -59,6 +72,7 @@ body {
 
 p,
 li {
+    font-family: 'Poppins', sans-serif;
     text-align: justify;
 }
 
@@ -66,6 +80,11 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.figure-caption,
+.figure-caption2 {
+    font-size: 1.1rem;
 }
 
 .figure-caption,
@@ -106,8 +125,8 @@ li {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    background: url('../img/boi-banner.jpg') center center/cover no-repeat;
-    min-height: calc(0.4 * 100vw);
+    background: url('../img/boi-banner.jpeg') center center/cover no-repeat;
+    min-height: calc(0.52 * 100vw);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +181,7 @@ li {
 }
 
 .banner-title {
-    font-size: 2.7rem;
+    font-size: 4rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 10px;
@@ -170,10 +189,31 @@ li {
 }
 
 .banner-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 0;
+}
+
+
+@media (max-width: 920px) {
+    .banner-title {
+        font-size: 2.4rem;
+    }
+
+    .banner-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .topic {
+        font-size: 1.4rem;
+    }
+
+    .figure-caption,
+    .figure-caption2 {
+        font-size: 0.9rem;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -182,11 +222,12 @@ li {
     }
 
     .banner-title {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
-    .banner-subtitle {
-        font-size: 1rem;
+    p,
+    li {
+        font-size: 0.9rem;
     }
 
     .banner-content {
@@ -210,6 +251,17 @@ li {
     .figure-group {
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 420px) {
+    .banner-title {
+        font-size: 1.6rem;
+    }
+
+    .topic {
+        font-size: 1.3rem;
+    }
+
 }
 
 /* Remove a margem do container principal para o banner ficar colado no topo */
