@@ -14,7 +14,8 @@ body {
 }
 
 .card {
-    border-color: rgba(33, 136, 56); /* rgba(33, 136, 56) */
+    border-color: rgba(33, 136, 56);
+    /* rgba(33, 136, 56) */
 }
 
 .card-title {
@@ -61,17 +62,19 @@ li {
     align-items: center;
 }
 
-.figure-img-caption .figure-img {
-    display: block;
+.figure-caption,
+.figure-img {
     width: 100%;
-    height: auto;
     max-width: 600px;
-    /* ajuste se quiser limitar o tamanho máximo */
+    /* igual ao max-width da imagem */
+    text-align: center;
+    word-break: break-word;
 }
 
-.figure-img-caption .figure-caption {
-    width: 100%;
-    max-width: 600px;
+.figure-caption2,
+.figure-img2 {
+    height: 100%;
+    max-height: 220px;
     /* igual ao max-width da imagem */
     text-align: center;
     word-break: break-word;
@@ -196,6 +199,10 @@ li {
 
     .hide-mobile {
         display: none !important;
+    }
+
+    .figure-group {
+        flex-wrap: wrap;
     }
 }
 
